@@ -8,7 +8,7 @@ def transcribe_audio(filepath):
     return model.predict(
         audio=open(filepath, "rb"),
         model="base",
-        translate=false
+        translate=true
     )
 
 
