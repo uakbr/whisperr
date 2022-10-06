@@ -7,8 +7,8 @@ def transcribe_audio(filepath):
     model = replicate.models.get("cjwbw/whisper")
     return model.predict(
         audio=open(filepath, "rb"),
-        model="large",
-        translate=True
+        model="base",
+        translate=false
     )
 
 
